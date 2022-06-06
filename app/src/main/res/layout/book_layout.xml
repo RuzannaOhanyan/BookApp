@@ -45,8 +45,9 @@
                     android:id="@+id/pdfView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
                     android:background="@android:color/transparent"
                     android:gravity="center|top" />
 
@@ -58,10 +59,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="48dp"
                 android:text="Գրքի անվանումը"
                 android:textColor="@color/blue"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/rl"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,8 +84,9 @@
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:text="Գրքի նկարագրությունը"
+                android:textSize="8dp"
                 app:layout_constraintStart_toStartOf="@+id/titleTv"
                 app:layout_constraintTop_toBottomOf="@+id/titleTv" />
 

@@ -1,7 +1,6 @@
 package com.example.bookapp
 
 class PdfModelData{
-    //variables
     var uid:String =""
     var id:String =""
     var title:String =""
