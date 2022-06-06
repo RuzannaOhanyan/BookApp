@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back02"
+    tools:context=".fragments.BookAddFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_back1"
+            android:layout_width="62dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            app:srcCompat="@drawable/logoo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ավելացնել գիրք"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/ed_title"
+        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_edittext01"
+        android:drawableStart="@drawable/ic_subtitles_gray"
+        android:ems="10"
+        android:hint="Գրքի անվանումը"
+        android:inputType="textEmailAddress"
+        android:paddingStart="14dp"
+        android:textColor="#011A2E"
+        android:textColorHint="#00897b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons" />
+
+    <EditText
+        android:id="@+id/ed_description"
+        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_edittext01"
+        android:drawableStart="@drawable/ic_description_gray"
+        android:ems="10"
+        android:hint="Book description"
+        android:inputType="textEmailAddress"
+        android:paddingStart="14dp"
+        android:textColor="#011A2E"
+        android:textColorHint="#00897b"
+        app:layout_constraintStart_toStartOf="@+id/ed_title"
+        app:layout_constraintTop_toBottomOf="@+id/ed_title" />
+
+
+    <EditText
+        android:id="@+id/ed_categorie"
+        style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_edittext01"
+        android:drawableStart="@drawable/ic_categorie_gray"
+        android:drawableEnd="@drawable/ic_down_gray"
+        android:editable="false"
+        android:ems="10"
+        android:paddingEnd="14dp"
+        android:hint="Book category"
+        android:inputType="textEmailAddress"
+        android:paddingStart="14dp"
+        android:textColor="#011A2E"
+        android:textColorHint="#00897b"
+        app:layout_constraintStart_toStartOf="@+id/ed_description"
+        app:layout_constraintTop_toBottomOf="@+id/ed_description" />
+
+    <Button
+        android:id="@+id/att_pdf"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_attach_file"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:text="ԸՆՏՐԵԼ ՖԱՅԼԸ"
+        android:textColor="#F68765"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ed_categorie"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_categorie"
+        app:layout_constraintTop_toBottomOf="@+id/ed_categorie" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_book"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+       android:background="@drawable/shape_button01"
+        android:text="Ավելացնել"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/att_pdf"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/att_pdf"
+        app:layout_constraintTop_toBottomOf="@+id/att_pdf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
