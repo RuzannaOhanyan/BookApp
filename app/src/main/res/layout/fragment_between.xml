@@ -45,7 +45,7 @@
         android:id="@+id/btn_login"
         android:layout_width="310dp"
         android:layout_height="53dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/shape_button01"
         android:text="Մուտք գործել"
         android:textColor="@color/white"

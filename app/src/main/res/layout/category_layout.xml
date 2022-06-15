@@ -24,7 +24,7 @@
             android:layout_gravity="center|left"
             android:layout_marginStart="2dp"
             android:text="ժանրի անվանումը"
-            android:textColor="#C13B11"
+            android:textColor="#015A52"
             android:textSize="18sp"/>
 
         <ImageButton

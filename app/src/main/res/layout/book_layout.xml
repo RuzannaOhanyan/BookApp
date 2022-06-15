@@ -36,6 +36,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="30dp"
+                    android:indeterminateTint="@color/teal_700"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="30dp"
@@ -55,14 +56,19 @@
 
             <TextView
                 android:id="@+id/titleTv"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="12dp"
                 android:text="Գրքի անվանումը"
+                android:lines="2"
+                android:ellipsize="end"
                 android:textColor="@color/blue"
                 android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/rl"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,13 +88,20 @@
 
             <TextView
                 android:id="@+id/description"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:lines="3"
                 android:text="Գրքի նկարագրությունը"
-                android:textSize="8dp"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/date_tv"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/titleTv"
-                app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+                app:layout_constraintTop_toBottomOf="@+id/titleTv"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/size_tv"
@@ -104,7 +117,7 @@
                 android:id="@+id/date_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="48dp"
+                android:layout_marginEnd="28dp"
                 android:text="dd/mm/yyyy"
                 app:layout_constraintEnd_toStartOf="@+id/category_tv"
                 app:layout_constraintTop_toTopOf="@+id/size_tv" />
