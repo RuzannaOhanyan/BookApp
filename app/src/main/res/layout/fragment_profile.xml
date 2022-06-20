@@ -168,7 +168,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reservedBooksRv"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="300dp"
         android:layout_margin="10dp"
         android:layout_marginTop="8dp"

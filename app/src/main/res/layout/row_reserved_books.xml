@@ -20,7 +20,6 @@
             android:background="@color/gray02"
             android:layout_marginEnd="5dp">
 
-            <!--Pdf view -->
             <com.github.barteksc.pdfviewer.PDFView
                 android:id="@+id/pdfView"
                 android:layout_width="match_parent"
@@ -29,7 +28,6 @@
                 android:id="@+id/progressBar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
-
 
 
         </RelativeLayout>
@@ -42,6 +40,7 @@
             android:layout_toEndOf="@+id/pdfRL"
             android:ellipsize="end"
             android:maxLines="1"
+            android:textSize="16sp"
             android:text="Գրքի անվանումը"
             android:textColor="@color/blue" />
 
@@ -68,7 +67,7 @@
             android:layout_marginTop="8dp"
             android:layout_toEndOf="@id/pdfRL"
             android:ellipsize="end"
-            android:maxLines="4"
+            android:maxLines="2"
             android:text="Գրքի նկարագրությունը"
             android:textColor="@color/blue" />
 

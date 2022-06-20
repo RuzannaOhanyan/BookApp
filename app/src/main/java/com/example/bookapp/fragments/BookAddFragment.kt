@@ -58,7 +58,7 @@ class BookAddFragment : Fragment() {
         binding.btnAddBook.setOnClickListener {
             validation()
         }
-        binding.btnBack1.setOnClickListener {
+        binding.btnBack.setOnClickListener {
             view.findNavController().navigate(R.id.action_bookAddFragment_to_dashboardAdminFragment)
         }
     }

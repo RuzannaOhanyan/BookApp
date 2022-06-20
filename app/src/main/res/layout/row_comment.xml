@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
-            android:text="Օգտագործողի բովանդակությունը"
+            android:text="Օգտագործողի մեկնաբանությունը"
             android:textColor="@color/gray02"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/profileIv"

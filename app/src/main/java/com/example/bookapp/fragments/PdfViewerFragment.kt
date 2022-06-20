@@ -35,7 +35,7 @@ class PdfViewerFragment : Fragment() {
                 binding.pdfViewer.fromBytes(bytes)
                     .swipeHorizontal(false)
                     .onPageChange{page,pageCount->
-                        val currentPage=page+1//because page start with 0
+                        val currentPage=page+1
                         binding.Pages.text="$currentPage/$pageCount"
                         Log.d(TAG,"Հաջողությամբ բեռնված էջը $currentPage/$pageCount :)")
                     }
@@ -49,7 +49,7 @@ class PdfViewerFragment : Fragment() {
                 binding.progressBarViewer.visibility= View.GONE
             }
             .addOnFailureListener {
-                Toast.makeText(this.context,"ասդ", Toast.LENGTH_LONG).show()
+                Toast.makeText(this.context,"Կա սխալ", Toast.LENGTH_LONG).show()
                 Log.d(TAG,"Գիրք ստանալու սխալի ${it.message} պատճառով :(")
                 binding.progressBarViewer.visibility= View.GONE
             }

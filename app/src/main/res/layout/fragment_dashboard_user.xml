@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back02"
     tools:context=".fragments.DashboardUserFragment">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutUser"
         android:layout_width="0dp"
@@ -87,7 +88,7 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/ViewPager"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="577dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"

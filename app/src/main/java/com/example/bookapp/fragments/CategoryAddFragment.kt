@@ -58,7 +58,7 @@ class CategoryAddFragment : Fragment() {
         map["category"]=category
         map["timestamp"]=timestamp
         map["uid"]=auth.uid.toString()
-        //reference of root
+
         val ref = FirebaseDatabase.getInstance().getReference("Categories")
         ref.child(timestamp.toString())
             .setValue(map)
