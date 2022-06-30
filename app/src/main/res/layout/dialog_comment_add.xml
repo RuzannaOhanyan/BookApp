@@ -27,7 +27,7 @@
         android:padding="5dp"
         android:text="Ավելացնել մեկնաբանություն"
         android:textAlignment="center"
-        android:textColor="#009688"
+        android:textColor="@color/bluee"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

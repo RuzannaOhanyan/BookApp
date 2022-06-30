@@ -16,7 +16,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:background="#C8EAE9"
+            android:background="@color/gray04"
             android:layout_height="match_parent">
 
             <RelativeLayout
@@ -36,7 +36,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="30dp"
-                    android:indeterminateTint="@color/teal_700"
+                    android:indeterminateTint="@color/bluee"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="30dp"
@@ -65,7 +65,7 @@
                 android:text="Գրքի անվանումը"
                 android:lines="2"
                 android:ellipsize="end"
-                android:textColor="@color/blue"
+                android:textColor="@color/bluee"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

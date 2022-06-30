@@ -12,7 +12,7 @@
         app:cardUseCompatPadding="true"
         app:cardCornerRadius="24dp"
         app:cardElevation="4dp"
-        app:cardBackgroundColor="#C8EAE9"
+        app:cardBackgroundColor="@color/gray04"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
@@ -24,7 +24,7 @@
             android:layout_gravity="center|left"
             android:layout_marginStart="2dp"
             android:text="ժանրի անվանումը"
-            android:textColor="#015A52"
+            android:textColor="@color/bluee"
             android:textSize="18sp"/>
 
         <ImageButton

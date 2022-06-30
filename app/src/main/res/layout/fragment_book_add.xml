@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back02"
     tools:context=".fragments.BookAddFragment">
 
     <androidx.appcompat.widget.AppCompatButton
@@ -55,7 +54,7 @@
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:textColor="#011A2E"
-        android:textColorHint="#00897b"
+        android:textColorHint="@color/gray02"
         app:layout_constraintTop_toBottomOf="@id/ed_description"
 
         />
@@ -74,7 +73,7 @@
         android:paddingVertical="16dp"
         android:paddingStart="14dp"
         android:textColor="#011A2E"
-        android:textColorHint="#00897b"
+        android:textColorHint="@color/gray02"
         app:layout_constraintEnd_toEndOf="@+id/ed_title"
         app:layout_constraintStart_toStartOf="@+id/ed_title"
         app:layout_constraintTop_toBottomOf="@+id/ed_title" />
@@ -104,14 +103,14 @@
 
     <ImageView
         android:id="@+id/img_logo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/img_background"
         app:layout_constraintVertical_bias="0.2"
-        app:srcCompat="@drawable/logoo" />
+        app:srcCompat="@drawable/d" />
 
     <TextView
         android:id="@+id/textView"
@@ -142,7 +141,7 @@
         android:paddingVertical="16dp"
         android:paddingStart="14dp"
         android:textColor="#011A2E"
-        android:textColorHint="#00897b"
+        android:textColorHint="@color/gray02"
         app:layout_constraintEnd_toEndOf="@id/img_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_background" />

@@ -4,9 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProfileEditFragment"
-    android:background="@drawable/back02"
-    >
+    tools:context=".fragments.ProfileEditFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -43,10 +48,11 @@
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="36dp"
         android:background="@color/white"
         android:src="@drawable/ic_person_gray"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
@@ -69,22 +75,21 @@
             android:hint="Անուն"
             android:inputType="textPersonName|textCapWords"
             android:textColor="#011A2E"
-            android:textColorHint="#00897b" />
+            android:textColorHint="@color/gray02" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/updateBtn"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:background="@drawable/shape_button01"
-        android:backgroundTint="#009688"
+        android:backgroundTint="@color/blue"
         android:text="Թարմացնել"
         android:layout_marginHorizontal="16dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/nameTil"
         app:layout_constraintStart_toStartOf="@+id/nameTil"
         app:layout_constraintTop_toBottomOf="@+id/nameTil" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

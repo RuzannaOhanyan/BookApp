@@ -5,8 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import androidx.navigation.findNavController
 import com.example.bookapp.R
+import com.example.bookapp.databinding.FragmentSplashBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -18,6 +22,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class SplashFragment : Fragment() {
+    private lateinit var binding: FragmentSplashBinding
     private lateinit var auth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,6 +30,9 @@ class SplashFragment : Fragment() {
     ): View? {
         val view= inflater.inflate(R.layout.fragment_splash, container, false)
         auth= FirebaseAuth.getInstance()
+
+//        val sideAnimation = AnimationUtils.loadAnimation(context,R.anim.slide)
+//        binding.logo.startAnimation(sideAnimation)
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(2000L)

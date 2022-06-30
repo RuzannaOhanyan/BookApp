@@ -8,7 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="prink">#D48BB3</color>
-    <color name="gray02">#777777</color>
-    <color name="gray04">#FBFBFB</color>
-    <color name="blue">#070A50</color>
+    <color name="gray02">#68696A</color>
+    <color name="gray04">#eeeeee</color>
+    <color name="blue">#2962ff</color>
+    <color name="bluee">#002071</color>
 </resources>

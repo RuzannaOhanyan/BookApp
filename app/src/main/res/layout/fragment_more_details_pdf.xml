@@ -18,6 +18,7 @@
             style="?android:attr/progressBarStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:indeterminateTint="@color/gray02"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:visibility="visible"
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/category_det"
         app:layout_constraintHorizontal_bias="0.0"
@@ -54,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/category_det"
         app:layout_constraintTop_toBottomOf="@+id/category_det" />
 
@@ -64,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/size_det"
         app:layout_constraintTop_toBottomOf="@+id/size_det" />
 
@@ -74,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/views_det"
         app:layout_constraintTop_toBottomOf="@+id/views_det" />
 
@@ -84,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/date_det"
         app:layout_constraintTop_toBottomOf="@+id/date_det" />
 
@@ -94,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/downloads_det"
         app:layout_constraintTop_toBottomOf="@+id/downloads_det" />
 
@@ -105,7 +106,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/title_det" />
 
@@ -117,7 +118,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
         android:text="TextView"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -138,7 +139,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
         android:text="Մեկնաբանություններ"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -182,7 +183,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Չափը"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/textView17"
         app:layout_constraintTop_toTopOf="@+id/size_det" />
 
@@ -191,7 +192,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Էջեր"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/textView20"
         app:layout_constraintTop_toTopOf="@+id/pages_det" />
 
@@ -200,7 +201,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Դիտումներ"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="@+id/views_det" />
 
@@ -209,7 +210,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ներբեռնում"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/textView19"
         app:layout_constraintTop_toTopOf="@+id/downloads_det" />
 
@@ -218,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ամսաթիվ"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toStartOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/date_det" />
 
@@ -228,7 +229,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:text="Ժանր"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
         app:layout_constraintTop_toTopOf="@+id/category_det" />
 
@@ -240,7 +241,7 @@
         android:drawableLeft="@drawable/ic_book_white"
         android:text="Կարդալ գիրքը"
         android:textColor="@color/white"
-        android:background="#00675b"
+        android:background="@color/bluee"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_download" />
@@ -254,7 +255,7 @@
         android:text="Ներբեռնել"
         android:textSize="8sp"
         android:textColor="@color/white"
-        android:background="#00675b"
+        android:background="@color/bluee"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnReserve"
         app:layout_constraintStart_toEndOf="@+id/btn_read_book" />
@@ -263,7 +264,7 @@
         android:id="@+id/btnReserve"
         android:layout_width="100dp"
         android:layout_height="73dp"
-        android:background="#00675b"
+        android:background="@color/bluee"
         android:layout_marginEnd="8dp"
         android:drawableLeft="@drawable/ic_favorite_border_white"
         android:text="Հավանել"

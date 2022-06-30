@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C8EAE9">
+        android:background="@color/gray04">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/profileIv"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:text="Անձի անունը"
-            android:textColor="@color/blue"
+            android:textColor="@color/bluee"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/profileIv"
             app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,5 @@
             app:layout_constraintStart_toEndOf="@+id/profileIv"
             app:layout_constraintTop_toBottomOf="@+id/nameTv" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </androidx.cardview.widget.CardView>

@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#C8EAE9">
+        android:background="@color/gray04">
         <RelativeLayout
 
             android:id="@+id/pdfRL"
@@ -28,6 +28,7 @@
             <ProgressBar
                 android:id="@+id/progressBar"
                 android:layout_width="match_parent"
+                android:indeterminateTint="@color/bluee"
                 android:layout_height="match_parent" />
 
 
@@ -44,7 +45,7 @@
             android:maxLines="1"
             android:text="Գրքի անվանումը"
             android:textSize="16sp"
-            android:textColor="@color/blue" />
+            android:textColor="@color/bluee" />
 
         <TextView
             android:id="@+id/descriptionTv"
@@ -58,7 +59,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:text="Գրքի նկարագրությունը"
-            android:textColor="@color/blue" />
+            android:textColor="@color/bluee" />
         <TextView
             android:id="@+id/categoryTv"
             android:layout_width="wrap_content"
@@ -70,7 +71,7 @@
             android:maxLines="1"
             android:layout_marginBottom="4dp"
             android:layout_marginEnd="4dp"
-            android:textColor="@color/blue"/>
+            android:textColor="@color/bluee"/>
         <TextView
             android:id="@+id/sizeTv"
             style="@style/TextAppearance.MaterialComponents.Caption"
@@ -82,7 +83,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginBottom="4dp"
             android:text="14 MB"
-            android:textColor="@color/blue"/>
+            android:textColor="@color/bluee"/>
 
 
         <TextView
@@ -96,12 +97,8 @@
             android:layout_marginBottom="4dp"
             android:layout_alignParentBottom="true"
             android:textAlignment ="center"
-            android:textColor="@color/blue"/>
-
+            android:textColor="@color/bluee"/>
 
     </RelativeLayout>
-
-
-
 
 </androidx.cardview.widget.CardView>

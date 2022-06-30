@@ -4,13 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back02"
+
     tools:context=".fragments.RegisterFragment">
 
     <RelativeLayout
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="350dp"
         android:background="@drawable/shape_toolbar12">
 
         <ImageButton
@@ -27,11 +27,11 @@
 
         <ImageView
             android:id="@+id/iconTv"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
-            android:src="@drawable/logoo" />
+            android:src="@drawable/k" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,11 +47,13 @@
     </RelativeLayout>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="347dp"
+        android:layout_height="421dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="225dp"
-        android:layout_marginEnd="32dp">
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="-42dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -74,7 +76,7 @@
                     android:inputType="textPersonName|textCapWords"
                     android:padding="16dp"
                     android:textColor="#011A2E"
-                    android:textColorHint="#00897b" />
+                    android:textColorHint="@color/gray02" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -98,7 +100,7 @@
                     android:inputType="textEmailAddress"
                     android:padding="16dp"
                     android:textColor="#011A2E"
-                    android:textColorHint="#00897b" />
+                    android:textColorHint="@color/gray02" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -122,7 +124,7 @@
                     android:inputType="textPassword"
                     android:padding="16dp"
                     android:textColor="#011A2E"
-                    android:textColorHint="#00897b" />
+                    android:textColorHint="@color/gray02" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -146,7 +148,8 @@
                     android:inputType="textPassword"
                     android:padding="16dp"
                     android:textColor="#011A2E"
-                    android:textColorHint="#00897b" />
+                    android:textColorHint="@color/gray02" />
+
                 <ProgressBar
                     android:id="@+id/progressBar"
                     style="?android:attr/progressBarStyle"

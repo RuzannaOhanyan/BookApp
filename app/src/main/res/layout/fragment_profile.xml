@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/back02"
     tools:context=".fragments.ProfileFragment">
 
 
@@ -66,7 +65,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:text="Ամբողջական անուն"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/profileIv"
@@ -80,7 +79,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="abc@exanple.com"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/nameTv"
         app:layout_constraintStart_toStartOf="@+id/nameTv"
@@ -106,14 +105,14 @@
                 android:layout_width= "wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Հաշիվ"
-                android:textColor="@color/blue"
+                android:textColor="@color/bluee"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/accountTypeTv"
                 android:layout_width= "wrap_content"
                 android:layout_height="wrap_content"
                 android:text="nn"
-                android:textColor="@color/blue"
+                android:textColor="@color/bluee"
                 />
 
         </LinearLayout>
@@ -128,14 +127,14 @@
                 android:layout_width= "wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Գրանցված է"
-                android:textColor="@color/blue"
+                android:textColor="@color/bluee"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/memberDateTv"
                 android:layout_width= "wrap_content"
                 android:layout_height="wrap_content"
                 android:text="nn"
-                android:textColor="@color/blue"
+                android:textColor="@color/bluee"
                 />
 
         </LinearLayout>
@@ -161,7 +160,7 @@
         android:padding="5dp"
         android:text="Պահված գրքեր"
         android:layout_margin="10dp"
-        android:textColor="@color/blue"
+        android:textColor="@color/bluee"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view1" />

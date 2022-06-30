@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back02"
     tools:context=".fragments.PdfEditFragment">
 
 
@@ -23,7 +22,7 @@
         android:paddingStart="14dp"
         android:paddingEnd="16dp"
         android:textColor="#011A2E"
-        android:textColorHint="#00897b"
+        android:textColorHint="@color/gray02"
         app:layout_constraintEnd_toEndOf="@+id/ed_description_up"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/ed_description_up"
@@ -42,17 +41,18 @@
         android:inputType="textEmailAddress"
         android:paddingStart="14dp"
         android:textColor="#011A2E"
-        android:textColorHint="#00897b"
+        android:textColorHint="@color/gray02"
+        app:layout_constraintEnd_toEndOf="@+id/ed_title_up"
         app:layout_constraintStart_toStartOf="@+id/ed_title_up"
         app:layout_constraintTop_toBottomOf="@+id/ed_title_up" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_up_book"
         android:layout_width="300dp"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/shape_button01"
-        android:backgroundTint="#009688"
+        android:backgroundTint="@color/blue"
         android:text="Թարմացնել"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/ed_categorie_up"
@@ -63,7 +63,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint"
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="350dp"
         android:background="@drawable/shape_toolbar12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,15 +71,15 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.2"
-            app:srcCompat="@drawable/logoo" />
+            app:layout_constraintVertical_bias="0.1"
+            app:srcCompat="@drawable/l" />
 
         <TextView
             android:id="@+id/textView3"
@@ -100,7 +100,7 @@
         style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
         android:layout_width="300dp"
         android:layout_height="52dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/shape_edittext01"
         android:drawableStart="@drawable/ic_subtitles_gray"
         android:ems="10"
@@ -108,9 +108,9 @@
         android:inputType="textEmailAddress"
         android:paddingStart="14dp"
         android:textColor="#011A2E"
-        android:textColorHint="#00897b"
+        android:textColorHint="@color/gray02"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraint" />
 </androidx.constraintlayout.widget.ConstraintLayout>
