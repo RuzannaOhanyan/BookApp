@@ -5,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back02"
     tools:context=".fragments.LoginFragment">
 
     <RelativeLayout
@@ -20,7 +19,7 @@
         android:layout_height="130dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:src="@drawable/logoo" />
+        android:src="@drawable/c" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,10 +33,12 @@
         android:textStyle="bold" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRl"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="32dp">
 
         <RelativeLayout
@@ -61,7 +62,7 @@
                     android:inputType="textEmailAddress"
                     android:padding="16dp"
                     android:textColor="#011A2E"
-                    android:textColorHint="#00897b" />
+                    android:textColorHint="@color/gray02" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,7 +94,7 @@
                     android:inputType="textPassword"
                     android:padding="16dp"
                     android:textColor="#011A2E"
-                    android:textColorHint="#00897b" />
+                    android:textColorHint="@color/gray02" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -106,7 +107,7 @@
                 android:layout_marginTop="8dp"
                 android:padding="4dp"
                 android:text="Մոռացել ե՞ք գաղտնաբառը"
-                android:textColor="#00897b"
+                android:textColor="@color/bluee"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -125,13 +126,20 @@
 
     <TextView
         android:id="@+id/tv_without_acc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scroll"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textColor="@color/gray02"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="0dp"
         android:padding="16dp"
         android:text="@string/register"
         android:textSize="16dp"
         android:textStyle="bold" />
+
 
 </RelativeLayout>

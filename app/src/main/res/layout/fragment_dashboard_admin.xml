@@ -11,7 +11,7 @@
     <EditText
         android:id="@+id/ed_search"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginHorizontal="8dp"
         android:background="@drawable/shape_edittext01"
