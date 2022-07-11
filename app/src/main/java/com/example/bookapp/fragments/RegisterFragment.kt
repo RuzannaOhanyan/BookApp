@@ -97,6 +97,13 @@ class RegisterFragment : Fragment() {
             .addOnSuccessListener {
                 progressDialog.dismiss()
                 Toast.makeText(this.context,"Ստեղծվել է հաշիվ",Toast.LENGTH_LONG).show()
+                FirebaseAuth.getInstance().currentUser?.sendEmailVerification()?.addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        Toast.makeText(context, "Նամակն ուղարկված է", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(context, "Նամակը չի ուղարկվել", Toast.LENGTH_SHORT).show()
+                    }
+                }
                 view?.findNavController()?.navigate(R.id.action_registerFragment_to_loginFragment)
             }
             .addOnFailureListener {e->

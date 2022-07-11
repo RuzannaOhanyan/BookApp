@@ -57,9 +57,10 @@ class LoginFragment : Fragment() {
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
             Toast.makeText(this.context,"Էլ․փոստի ձևաչափը անվավեր է", Toast.LENGTH_LONG).show()
         else if(password.isEmpty())
-            Toast.makeText(this.context,"Մուտքագրեք ճիշտ գաքղտնաբառը", Toast.LENGTH_LONG).show()
+            Toast.makeText(this.context,"Մուտքագրեք ճիշտ գաղտնաբառը", Toast.LENGTH_LONG).show()
         else
             loginUser()
+
     }
 
     private fun loginUser() {
@@ -77,7 +78,7 @@ class LoginFragment : Fragment() {
 
     private fun checkUser() {
         progressDialog.setTitle("Օգտատիրոջ ստուգում")
-        val user=auth.currentUser!!
+        val user= auth.currentUser!!
         val ref= FirebaseDatabase.getInstance().getReference("Users")
         ref.child(user.uid)
             .addListenerForSingleValueEvent(object : ValueEventListener {
@@ -85,7 +86,11 @@ class LoginFragment : Fragment() {
                     progressDialog.dismiss()
                     val userType=snapshot.child("userType").value
                     if(userType=="user"){
+                        if (FirebaseAuth.getInstance().currentUser?.isEmailVerified!!)
                         view?.findNavController()?.navigate(R.id.action_loginFragment_to_dashboardUserFragment)
+                        else
+                            Toast.makeText(context, "Վավերացված է", Toast.LENGTH_SHORT).show()
+
                     }
                     else if(userType=="admin"){
                         view?.findNavController()?.navigate(R.id.action_loginFragment_to_dashboardAdminFragment)
